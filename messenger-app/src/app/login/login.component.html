@@ -1,0 +1,24 @@
+
+<form>
+
+  <div class="loginForm">
+      <div class="row">
+        <h2 style="text-align:center;color:whitesmoke">Login with Social Media or Manually</h2>
+        </div>
+        <input type="text" name="username" placeholder="Username" required [(ngModel)]="userName"/>
+        <input type="password" name="password" placeholder="Password" required [(ngModel)]="password"  />
+      <input type="submit" value="Login"  (click)="onLogin()">
+  </div>
+
+</form>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>

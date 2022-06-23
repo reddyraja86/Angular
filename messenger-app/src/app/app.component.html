@@ -1,0 +1,7 @@
+<button (click)="changeLogin()"></button>
+<div *ngIf="login==false">
+  <app-login (loggedInUser) ="getLoggedInuserName($event)"></app-login>
+</div>
+<div *ngIf="login==true">
+  <app-dash [user] ="loggedUser"></app-dash>
+</div>

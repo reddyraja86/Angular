@@ -1,0 +1,70 @@
+/* body {
+  display: block;
+  margin: 0px;
+  background-color: red;
+} */
+#body {
+  display: none;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.mainContent {
+  /* width: 100%; */
+  background-color: #128c7e;
+  padding: 30px;
+  border-radius:  14px 14px 0px 0px;
+
+}
+
+.footerContent {
+text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.flexmain {
+ /*  border: 10px solid grey; */
+  height: 100vh;
+
+  display: flex;
+}
+
+.column1 {
+  border: 1px solid grey;
+  width: 30%;
+}
+
+.column2 {
+  border: 1px solid grey;
+  width: 70%;
+}
+
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
